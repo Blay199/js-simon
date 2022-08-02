@@ -4,7 +4,7 @@ let nRandom = []
 // ciclo while finchè arrayRandom < 5  
 while (nRandom.length < 5) {
     // generare numeri random 
-    let nGen = Math.floor(Math.random() * 100 + 1)
+    let nGen = Math.floor(Math.random() * 10 + 1)
     // se arrayRandom NON include numero random
     if (!nRandom.includes(nGen))
         // pushare in array 
@@ -30,13 +30,17 @@ setTimeout(() => {
     }
 
     // ciclo for 
-    // for (let i = 0; i < array.length; i++) {
-    //     const element = array[i];
+    for (let i = 0; i < playerN.length; i++) {
         // se arrayRandom i è uguale arrayUtente i 
+        if (nRandom [i] == playerN [i]){
             // alert "il confronto" + (i + 1) + "è corretto"
+            alert(`il confronto ${i + 1} è corretto`)
             // alert `il confronto ${i + 1} è corretto`
-        // altrimenti 
+         
+        }else {// altrimenti
             // alert `il confronto i + 1 non è corretto`
-        
+            alert(`il confronto ${i + 1} non è corretto`)
+
+        }        
     }
 }, 1000);
