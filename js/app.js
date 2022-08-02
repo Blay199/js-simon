@@ -8,10 +8,10 @@ while (nRandom.length < 5) {
     // se arrayRandom NON include numero random
     if (!nRandom.includes(nGen))
         // pushare in array 
-        nRandom.push(nGen)
-    
+        nRandom.push(nGen)    
 }
 // alert con numeri random
+alert(nRandom)
 
 // timeout 30000 ms 
     // Array utente vuoto
