@@ -2,11 +2,13 @@
 let nRandom = []
 
 // ciclo while finchè arrayRandom < 5  
-while (nRandom < 5) {
+while (nRandom.length < 5) {
     // generare numeri random 
     let nGen = Math.floor(Math.random(1))
-    // se array NON include numero random
+    // se arrayRandom NON include numero random
+    if (!nRandom.includes(nGen))
         // pushare in array 
+        nRandom.push(nGen)
     
 }
 // alert con numeri random
